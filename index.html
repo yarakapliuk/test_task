@@ -5,9 +5,34 @@
 	<meta charset="UTF-8">
 	<script src="7.js"></script>
 	<style>
+        .container {
+            width: 500px;
+            height: 400px;
+            margin: 0 auto;
+        }
+        .container:after {
+            content: '';
+            display: block;
+            clear: both;
+        } 
+        .left, .right {
+            width: 20%;
+            height: 100%;
+        }
+        .left {
+            background: purple;
+            float: left;
+        }
+        .right {
+            background: red;
+            float: right;
+        }
 	</style>
 </head>
 <body>
-
+    <div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
 </body>
 </html>
